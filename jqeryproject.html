@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body{
+            /* background:linear-gradient(red ,blue ,green); */
+            background-image:linear-gradient(to right,rgb(74, 112, 82),#beb7b7,#723939);
+        }
+        #imgman,#imgman2,#imgman4,#imgman6{
+            /* direction: inherit; */
+            transform: scaleX(-1);
+            position: relative;
+        }
+       #imgman1,#imgman3,#imgman5{
+           margin-left: 1250px;
+           position: relative;
+       }
+       #kris{
+           margin-top:0px;
+           position: relative;
+           
+       }
+    </style>
+</head>
+<body>
+    
+    <img id="imgman" src="PngItem_1725059.png"width="100px"heigth="100px">
+    <br>
+   
+    
+    <img id="imgman1" src="PngItem_1725059.png"width="100px"heigth="100px">
+
+   
+   <!-- <br><br> -->
+   
+   <img id="imgman2" src="PngItem_1725059.png"width="100px"heigth="100px"><br>
+   <img id="imgman3" src="PngItem_1725059.png"width="100px"heigth="100px">
+   <br>
+   <img id="imgman4" src="PngItem_1725059.png"width="100px"heigth="100px">
+   <br>
+   <img id="imgman5" src="PngItem_1725059.png"width="100px"heigth="100px">
+  <br>
+   <img id="imgman6" src="PngItem_1725059.png"width="100px"heigth="100px">
+   <!-- <img id="kris" src="lord-krishna-picture-transparentpng-24.png"> -->
+
+   <script src="jquery.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            setInterval(function(){
+
+                $("#imgman,#imgman2,#imgman4,#imgman6").animate({left:"+=20px"});
+           
+// $("#imgman1").animate({marginTop:"+=30px"});
+
+
+            },10);
+            setInterval(function(){
+                $("#imgman1,#imgman3,#imgman5").animate({right:"+=20px",backgroundColor:"red",});
+            },10);
+            
+            // setInterval(function(){
+            //     // $("#imgman").animate({marginLeft:"+=30px",transform:"scaleX(-1)"});
+            //     $("#imgman1").animate({marginTop:"+=50px"});
+
+
+            // },1);
+            // setInterval(function(){
+            //     $("#imgman").animate({marginLeft:"+=30px",transform:"scaleX(-1)"});
+            //     $("#imgman2").animate({marginTop:"+=50px",marginLeft:"+=30px"});
+
+
+            // },1);
+        });
+    </script>
+</body>
+</html>
